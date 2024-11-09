@@ -1,7 +1,8 @@
-// components/MainContent.tsx
+// components/MainContent.jsx
+import React from 'react';
 import styles from '../css/MainContent.module.css';
 
-const MainContent: React.FC = () => {
+const MainContent = () => {
   return (
     <main className={styles.mainContent}>
       {/* Hero Section */}
@@ -25,22 +26,18 @@ const MainContent: React.FC = () => {
       <section className={styles.features}>
         <h2>What I Offer</h2>
         <div className={styles.featureCards}>
-          {["Responsive Design", "Fast Performance", "SEO Friendly"].map((feature, index) => (
-            <div
-              key={index}
-              className={`${styles.featureCard} ${styles.hidden}`}
-              style={{ "--card-index": index } as React.CSSProperties}
-            >
-              <h3>{feature}</h3>
-              <p>
-                {feature === "Responsive Design"
-                  ? "Beautiful designs that adapt perfectly to any screen size."
-                  : feature === "Fast Performance"
-                  ? "Optimized code to ensure fast loading and a smooth experience."
-                  : "Ensuring your site is visible to search engines from day one."}
-              </p>
-            </div>
-          ))}
+          <div className={styles.featureCard}>
+            <h3>Responsive Design</h3>
+            <p>Beautiful designs that adapt perfectly to any screen size.</p>
+          </div>
+          <div className={styles.featureCard}>
+            <h3>Fast Performance</h3>
+            <p>Optimized code to ensure fast loading and a smooth experience.</p>
+          </div>
+          <div className={styles.featureCard}>
+            <h3>SEO Friendly</h3>
+            <p>Ensuring your site is visible to search engines from day one.</p>
+          </div>
         </div>
       </section>
     </main>

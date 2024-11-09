@@ -61,6 +61,7 @@
     gap: 2rem;
   }
   
+  /* Feature Card Styles */
   .featureCard {
     background-color: white;
     padding: 2rem;
@@ -69,11 +70,18 @@
     width: 100%;
     max-width: 300px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially offset */
+    animation: fadeInUp 1s forwards; /* Apply animation */
+    transition: transform 0.5s ease; /* Smooth hover effect */
+    animation-delay: 0.5s; /* Delay the animation */
+  }
+  .featureCard h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   
+  /* Fade In & Slide Up Animation */
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -83,6 +91,25 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  
+  /* Staggered Animation Delays */
+  .featureCard:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .featureCard:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .featureCard:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  /* Hover effect to lift the card */
+  .featureCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   /* Responsive Design */
