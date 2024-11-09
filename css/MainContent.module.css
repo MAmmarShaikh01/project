@@ -1,0 +1,94 @@
+/* MainContent.module.css */
+
+/* Global Styles */
+.mainContent {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .heroText h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .heroText p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* About Section */
+  .about {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Features Section */
+  .features {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .featureCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .featureCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .featureCards {
+      flex-direction: row;
+    }
+  }
+  
