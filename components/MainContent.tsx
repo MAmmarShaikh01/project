@@ -4,7 +4,6 @@ import styles from '../css/MainContent.module.css';
 const MainContent: React.FC = () => {
   return (
     <main className={styles.mainContent}>
-      {/* Hero Section */}
       <section className={styles.hero}>
         <h1 className={styles.heroTitle}>Welcome to My Portfolio</h1>
         <p className={styles.heroSubtitle}>Crafting digital experiences that inspire and engage</p>
