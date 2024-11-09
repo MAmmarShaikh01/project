@@ -1,6 +1,6 @@
 // components/Footer.tsx
 import Link from 'next/link';
-import styles from './Footer.module.css';
+import styles from '../css/Footer.module.css';
 
 const Footer: React.FC = () => {
   return (
