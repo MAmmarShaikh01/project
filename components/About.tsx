@@ -1,7 +1,6 @@
 // components/AboutContent.jsx
 import React from 'react';
 import styles from '../css/AboutContent.module.css';
-import Image from 'next/image';
 
 const AboutContent = () => {
   return (
