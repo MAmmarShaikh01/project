@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import Footer from "../components/footer";
-import MainContent from "../components/MainContent";
 import styles from '../css/MainContent.module.css';
 
 export default function Home() {
