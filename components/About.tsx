@@ -1,6 +1,7 @@
 // components/AboutContent.jsx
 import React from 'react';
 import styles from '../css/AboutContent.module.css';
+import Image from 'next/image';
 
 const AboutContent = () => {
   return (
@@ -12,13 +13,6 @@ const AboutContent = () => {
         have experience with back-end technologies like Node.js and Express. My goal is to build fast, responsive,
         and beautiful web applications that provide excellent user experiences.
       </p>
-
-      <div className={styles.imageWrapper}>
-        <img
-          src="/images/profile.jpg" // Replace with your image path
-          alt="Profile Picture"
-        />
-      </div>
 
       <p>
         I am always excited to learn new technologies and improve my skills. Outside of coding, I enjoy traveling, 
