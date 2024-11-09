@@ -22,19 +22,7 @@
     margin-top: 1.5rem;
   }
   
-  .aboutContent .imageWrapper {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-  }
   
-  .aboutContent img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
   
   /* Animation */
   @keyframes fadeIn {
