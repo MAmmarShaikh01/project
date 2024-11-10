@@ -13,13 +13,12 @@ const Footer: React.FC = () => {
         <div className={styles.links}>
           <Link href="/about" className={styles.link}>About</Link>
           <Link href="/contact" className={styles.link}>Contact</Link>
-          <Link href="/privacy-policy" className={styles.link}>Privacy Policy</Link>
         </div>
 
         <div className={styles.socials}>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>Twitter</a>
+          <a href="https://vercel.com/ammars-projects-1e3ab620" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>Vercel</a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>LinkedIn</a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>GitHub</a>
+          <a href="https://github.com/MAmmarShaikh01/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>GitHub</a>
         </div>
 
         <p className={styles.copyright}>© 2024 My Portfolio. All rights reserved.</p>
